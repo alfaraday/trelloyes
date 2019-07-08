@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './Card.css';
 
 export default function Card(props) {
@@ -17,5 +18,7 @@ export default function Card(props) {
 }
 
 Card.propTypes = {
-  onClickDelete: () => {}
+  onClickDelete: () => {},
+  title: PropTypes.string.isRequired,
+  content: PropTypes.string.isRequired,
 }

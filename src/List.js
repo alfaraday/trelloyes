@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from './Card'
+import PropTypes from 'prop-types';
 import './List.css';
 
 export default function List(props) {
@@ -32,4 +33,9 @@ export default function List(props) {
 
 List.defaultProps = {
   onClickAdd: () => {},
+}
+
+List.propTypes = {
+  onClickAdd: () => {},
+  header: PropTypes.string.isRequired,
 }
